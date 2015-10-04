@@ -9,3 +9,8 @@ for (i in seq(1:55)) {
       system(paste('pdflatex ', 'prueba_', i, ".tex", sep=''))
 }
 #dev.off()
+
+for (i in seq(1:55)) {
+      knitr::knit('first_task.Rnw', output = paste('deber_', i, '.tex', sep = ''))
+      system(paste('pdflatex ', 'deber_', i, ".tex", sep=''))
+}
