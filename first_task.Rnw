@@ -1,0 +1,151 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+\newenvironment{question}{\item}{}
+\newenvironment{solution}{\comment}{\endcomment}
+\newenvironment{answerlist}{\renewcommand{\labelenumi}{(\alph{enumi})}\begin{enumerate}}{\end{enumerate}}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+{\sf
+{\Large \scshape Escuela Polit\'{e}cnica Nacional} \hfill \rule{0.1\textwidth}{0.5pt} {\scshape Deber 01} \rule{0.1\textwidth}{0.5pt}\\[7mm]
+{\scshape Tema: L\'{i}mites}\\
+}
+
+<<ejercicio01, echo=FALSE, results='hide'>>=
+one <- list()
+if (runif(1) < 0.1) {
+      one$a <- c("2","3","18")
+} else if (runif(1) >= 0.1 & runif(1) < 0.2) {
+      one$a <- c("-2","-2","-8")
+} else if (runif(1) >= 0.2 & runif(1) < 0.3) {
+      one$a <- c("3","4","48")
+} else if (runif(1) >= 0.3 & runif(1) < 0.4) {
+      one$a <- c("-3","2","-12")
+} else if (runif(1) >= 0.4 & runif(1) < 0.5) {
+      one$a <- c("4","-1","4")
+} else if (runif(1) >= 0.5 & runif(1) < 0.6) {
+      one$a <- c("-4","2","-16")
+} else if (runif(1) >= 0.6 & runif(1) < 0.7) {
+      one$a <- c("5","-2","20")
+} else if (runif(1) >= 0.7 & runif(1) < 0.8) {
+      one$a <- c("-5","3","-45")
+} else if (runif(1) >= 0.8 & runif(1) < 0.9) {
+      one$a <- c("6","3","54")
+} else {
+      one$a <- c("-6","-2","-24")
+}
+#orden <- sample(1:3)
+#one <- one[orden]
+@
+
+<<ejercicio02, echo=FALSE, results='hide'>>=
+two <- list()
+if (runif(1) < 0.1) {
+      two$a <- c("3","9")
+} else if (runif(1) >= 0.1 & runif(1) < 0.2) {
+      two$a <- c("4","16")
+} else if (runif(1) >= 0.2 & runif(1) < 0.3) {
+      two$a <- c("5","25")
+} else if (runif(1) >= 0.3 & runif(1) < 0.4) {
+      two$a <- c("6","36")
+} else if (runif(1) >= 0.4 & runif(1) < 0.5) {
+      two$a <- c("7","49")
+} else if (runif(1) >= 0.5 & runif(1) < 0.6) {
+      two$a <- c("8","64")
+} else if (runif(1) >= 0.6 & runif(1) < 0.7) {
+      two$a <- c("9","81")
+} else if (runif(1) >= 0.7 & runif(1) < 0.8) {
+      two$a <- c("10","100")
+} else if (runif(1) >= 0.8 & runif(1) < 0.9) {
+      two$a <- c("11","121")
+} else {
+      two$a <- c("12","144")
+}
+
+
+if (runif(1) < 0.1) {
+      two$b <- c("4","3","1")
+} else if (runif(1) >= 0.1 & runif(1) < 0.2) {
+      two$b <- c("5","1","2")
+} else if (runif(1) >= 0.2 & runif(1) < 0.3) {
+      two$b <- c("7","3","2")
+} else if (runif(1) >= 0.3 & runif(1) < 0.4) {
+      two$b <- c("10","1","3")
+} else if (runif(1) >= 0.4 & runif(1) < 0.5) {
+      two$b <- c("12","3","3")
+} else if (runif(1) >= 0.5 & runif(1) < 0.6) {
+      two$b <- c("7","6","1")
+} else if (runif(1) >= 0.6 & runif(1) < 0.7) {
+      two$b <- c("9","5","2")
+} else if (runif(1) >= 0.7 & runif(1) < 0.8) {
+      two$b <- c("15","6","3")
+} else if (runif(1) >= 0.8 & runif(1) < 0.9) {
+      two$b <- c("18","2","4")
+} else {
+      two$b <- c("13","4","3")
+}
+
+if (runif(1) < 0.1) {
+      two$c <- c("1","6","+2","2")
+} else if (runif(1) >= 0.1 & runif(1) < 0.2) {
+      two$c <- c("3","4","+3","2")
+} else if (runif(1) >= 0.2 & runif(1) < 0.3) {
+      two$c <- c("5","4","+5","2")
+} else if (runif(1) >= 0.3 & runif(1) < 0.4) {
+      two$c <- c("6","3","-3","6")
+} else if (runif(1) >= 0.4 & runif(1) < 0.5) {
+      two$c <- c("8","3","-2","4")
+} else if (runif(1) >= 0.5 & runif(1) < 0.6) {
+      two$c <- c("1","5","+4","1")
+} else if (runif(1) >= 0.6 & runif(1) < 0.7) {
+      two$c <- c("2","6","2","3")
+} else if (runif(1) >= 0.7 & runif(1) < 0.8) {
+      two$c <- c("7","3","-4","7")
+} else if (runif(1) >= 0.8 & runif(1) < 0.9) {
+      two$c <- c("5","4","-1","5")
+} else {
+      two$c <- c("8","2","-4","4")
+}
+@
+
+\begin{enumerate}
+      \item Sea $C$ una par\'{a}bola cuya ecuaci\'{o}n es $y=\Sexpr{one[[1]][1]}x^2$ y el punto $P$ con coordenadas $(\Sexpr{one[[1]][2]}, \Sexpr{one[[1]][3]})$.
+      \begin{enumerate}
+            \item Calcular el \emph{l\'{i}mite de los cocientes} $m_x$ cuando el n\'{u}mero $x$ se aproxima al n\'{u}mero $\Sexpr{one[[1]][2]}$, pero $x\neq \Sexpr{one[[1]][2]}$. 
+            \item Elabore una tabla con dos columnas. En la primera coloque valores de $x$ cercanos a $\Sexpr{one[[1]][2]}$, en la segunda columna eval\'{u}e los valores $m_x$ correspondientes. Con ayuda de la tabla generada determine un candidato para el valor de la pendiente de la recta tangente en el punto $P$.
+            \item Escriba la ecuaci\'{o}n de la recta tangente.
+      \end{enumerate}
+      \item Usando la definici\'{o}n $\epsilon$ y $\delta$, pruebe los siguientes l\'{i}mites:
+      \begin{enumerate}
+            \item $\displaystyle \lim_{x \to \Sexpr{two[[1]][1]}} x^2 = \Sexpr{two[[1]][2]}$
+            \item $\displaystyle \lim_{x \to \Sexpr{two[[2]][1]}} \sqrt{x- \Sexpr{two[[2]][2]}} = \Sexpr{two[[2]][3]}$
+            \item $\displaystyle \lim_{x \to \Sexpr{two[[3]][1]}} \frac{\Sexpr{two[[3]][2]}x}{x\Sexpr{two[[3]][3]}} = \Sexpr{two[[3]][4]}$
+      \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
