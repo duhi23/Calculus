@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+\newenvironment{question}{\item}{}
+\newenvironment{solution}{\comment}{\endcomment}
+\newenvironment{answerlist}{\renewcommand{\labelenumi}{(\alph{enumi})}\begin{enumerate}}{\end{enumerate}}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+{\sf
+{\Large \scshape Escuela Polit\'{e}cnica Nacional} \hfill {\scshape 7 de Octubre 2015}\\[3mm] 
+{\scshape C\'{a}lculo en una variable \hfill Prueba $\#2$}\\[7mm]
+{\scshape Nombre:} \rule{0.6\textwidth}{0.5pt}\qquad {\scshape Nro. lista:} \rule{0.1\textwidth}{0.5pt}\\
+}
+
+<<ejercicio01, echo=FALSE, results='hide'>>=
+one <- list()
+if (runif(1) < 0.1) {
+      one$a <- c("9","4","3","4","6")
+} else if (runif(1) >= 0.1 & runif(1) < 0.2) {
+      one$a <- c("4","2","1","2","3")
+} else if (runif(1) >= 0.2 & runif(1) < 0.3) {
+      one$a <- c("16","3","2","1","2")
+} else if (runif(1) >= 0.3 & runif(1) < 0.4) {
+      one$a <- c("25","5","10","1","3")
+} else if (runif(1) >= 0.4 & runif(1) < 0.5) {
+      one$a <- c("36","4","2","1","2")
+} else if (runif(1) >= 0.5 & runif(1) < 0.6) {
+      one$a <- c("9","2","7","1","5")
+} else if (runif(1) >= 0.6 & runif(1) < 0.7) {
+      one$a <- c("16","3","8","1","4")
+} else if (runif(1) >= 0.7 & runif(1) < 0.8) {
+      one$a <- c("4","1","3","1","5")
+} else if (runif(1) >= 0.8 & runif(1) < 0.9) {
+      one$a <- c("25","3","1","1","2")
+} else {
+      one$a <- c("36","2","4","1","5")
+}
+@
+
+<<ejercicio02, echo=FALSE, results='hide'>>=
+two <- list()
+if (runif(1) < 0.1) {
+      two$a <- c("1","4","1","3","2")
+} else if (runif(1) >= 0.1 & runif(1) < 0.2) {
+      two$a <- c("2","5","2","3","4")
+} else if (runif(1) >= 0.2 & runif(1) < 0.3) {
+      two$a <- c("3","6","3","1","2")
+} else if (runif(1) >= 0.3 & runif(1) < 0.4) {
+      two$a <- c("4","9","6","1","2")
+} else if (runif(1) >= 0.4 & runif(1) < 0.5) {
+      two$a <- c("5","6","1","1","6")
+} else if (runif(1) >= 0.5 & runif(1) < 0.6) {
+      two$a <- c("1","2","3","1","4")
+} else if (runif(1) >= 0.6 & runif(1) < 0.7) {
+      two$a <- c("2","8","2","3","2")
+} else if (runif(1) >= 0.7 & runif(1) < 0.8) {
+      two$a <- c("3","7","3","2","3")
+} else if (runif(1) >= 0.8 & runif(1) < 0.9) {
+      two$a <- c("4","8","8","1","3")
+} else {
+      two$a <- c("5","9","2","4","7")
+}
+@
+
+<<ejercicio03, echo=FALSE, results='hide'>>=
+three <- sample(seq(1, 10, by=1), size=3)
+@
+
+
+\begin{enumerate}
+      \item Demuestre usando la definici\'{o}n de l\'{i}mite, que:
+      \begin{enumerate}
+            \item {\scshape (5 pts.)} \qquad $\displaystyle \lim_{x\to -\Sexpr{two[[1]][1]} } \frac{x+\Sexpr{two[[1]][2]}}{x-\Sexpr{two[[1]][3]}} = -\frac{\Sexpr{two[[1]][4]}}{\Sexpr{two[[1]][5]}}$\\[60mm]
+            
+            \item {\scshape (5 pts.)} \qquad $\displaystyle \lim_{x\to \Sexpr{one[[1]][1]} } \frac{\Sexpr{one[[1]][2]}}{\sqrt{x}+\Sexpr{one[[1]][3]}} = \frac{\Sexpr{one[[1]][4]}}{\Sexpr{one[[1]][5]}}$\\[70mm]
+      \end{enumerate}
+
+      \item {\scshape Ejercicio Opcional (2 pts.)}: Resuelva la desigualdad y proporcione la soluci\'{o}n en notaci\'{o}n de intervalos.
+      \[\frac{(x-\Sexpr{three[1]})}{(x+\Sexpr{three[2]})(x-\Sexpr{three[3]})} \leq 0\]
+
+\end{enumerate}
+
+\end{document}
