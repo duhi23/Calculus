@@ -1,0 +1,56 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+\title{Cálculo diferencial e integral}
+\author{Diego Paul Huaraca S.}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+      \item Simplifique la siguiente expresión:
+      \[
+      \frac{x+y}{x-y}-\frac{x-y}{x+y}
+      \]
+      \item Desarrolle los siguientes productos notables
+      \begin{enumerate}
+            \item $(2x-5)^2$
+            \item $(\sqrt{x}-\sqrt{3})(\sqrt{x}+\sqrt{3})$
+            \item $\sqrt{x}\left(3\sqrt{x}-2\sqrt{x^3}\right)$
+      \end{enumerate}
+      \item Supongamos que $x$ e $y$ son dos variables relacionadas por la igualdad
+      \[
+      2x+y=6-x+3y
+      \]
+      \begin{enumerate}
+            \item Exprese a $x$ como función de $y$.
+            \item Exprese a $y$ como función de $x$.
+      \end{enumerate}
+      \item Grafique la siguiente función:
+      \[
+      f(x)=\frac{1}{2}-x
+      \]
+      \item Determine el dominio de la siguiente función:
+      \[
+      f(x)=\sqrt{2x-6} + \frac{3x}{\sqrt{x-5}}
+      \]
+\end{enumerate}
+
+\end{document}
