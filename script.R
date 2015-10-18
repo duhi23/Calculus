@@ -34,6 +34,6 @@ setwd("./second_task")
 list.files()
 
 for (i in seq(1:55)) {
-      knitr::knit('second_test.Rnw', output = paste('prueba_', i, '.tex', sep = ''))
-      system(paste('pdflatex ', 'prueba_', i, ".tex", sep=''))
+      knitr::knit('second_task.Rnw', output = paste('deber_', i, '.tex', sep = ''))
+      system(paste('pdflatex ', 'deber_', i, ".tex", sep=''))
 }
