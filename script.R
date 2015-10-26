@@ -37,3 +37,14 @@ for (i in seq(1:55)) {
       knitr::knit('second_task.Rnw', output = paste('deber_', i, '.tex', sep = ''))
       system(paste('pdflatex ', 'deber_', i, ".tex", sep=''))
 }
+
+# Tercera prueba
+
+dir.create("./three_test")
+setwd("./three_test")
+list.files()
+
+for (i in seq(1:55)) {
+      knitr::knit('three_test.Rnw', output = paste('prueba_', i, '.tex', sep = ''))
+      system(paste('pdflatex ', 'prueba_', i, ".tex", sep=''))
+}
