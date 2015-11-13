@@ -78,3 +78,23 @@ list.files()
 dir.create("./five_task")
 setwd("./five_task")
 list.files()
+
+# Sexto deber
+
+dir.create("./six_task")
+setwd("./six_task")
+list.files()
+
+
+# Quinta prueba
+
+dir.create("./five_test")
+setwd("./five_test")
+list.files()
+
+for (i in seq(1:55)) {
+      knitr::knit('five_test.Rnw', output = paste('prueba_', i, '.tex', sep = ''))
+      system(paste('pdflatex ', 'prueba_', i, ".tex", sep=''))
+}
+
+
