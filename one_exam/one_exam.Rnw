@@ -1,0 +1,79 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+
+\begin{document}
+
+\thispagestyle{empty}
+{\sf
+{\Large \scshape Escuela Polit\'{e}cnica Nacional} \hfill {\scshape 20 de Noviembre 2015}\\[3mm] 
+{\scshape C\'{a}lculo en una variable \hfill Examen Primer Bimestre}\\[7mm]
+{\scshape Nombre:} \rule{0.6\textwidth}{0.5pt}\qquad {\scshape Nro. lista:} \rule{0.1\textwidth}{0.5pt}\\
+}
+
+<<ejercicio01, echo=FALSE, results='hide'>>=
+one <- sample(seq(1, 9, by=1), size=2, replace=FALSE)
+@
+
+<<ejercicio02, echo=FALSE, results='hide'>>=
+two <- sample(seq(1, 9, by=1), size=3, replace=FALSE)
+two <- sort(two)
+@
+
+<<ejercicio03, echo=FALSE, results='hide'>>=
+three <- sample(seq(2, 10, by=1), size=3, replace=FALSE)
+@
+
+<<ejercicio04, echo=FALSE, results='hide'>>=
+four <- sample(seq(3, 8, by=1), size=2, replace=FALSE)
+@
+
+<<ejercicio05, echo=FALSE, results='hide'>>=
+five <- sample(seq(2, 7, by=1), size=3, replace=TRUE)
+@
+
+<<ejercicio06, echo=FALSE, results='hide'>>=
+six <- sample(seq(2, 8, by=1), size=1, replace=TRUE)
+@
+
+\begin{enumerate}
+      \item Demuestre usando la definici\'{o}n de l\'{i}mite que:
+      \begin{enumerate}
+            \item $\displaystyle \lim_{x \to 3} \displaystyle \frac{x^2-5x+4}{-2x+7}=-2$\\[100mm]
+            \item $\displaystyle \lim_{x \to -7} \displaystyle \frac{x^2+12x+27}{|x^2+5x-14|}=-\infty$\\[70mm]
+      \end{enumerate}
+      \newpage
+      \item Calcule los siguientes l\'{i}mites si existen:
+      \begin{enumerate}
+            \item $\displaystyle \lim_{x \to 9} \displaystyle \frac{x-9}{2-\sqrt{1+\sqrt{x}}}$\\[100mm]
+            \item $\displaystyle \lim_{x \to +\infty} \displaystyle \sqrt{5x+6\sqrt{x}}-\sqrt{5x-2\sqrt{x}}$\\[70mm]
+      \end{enumerate}
+      \newpage
+      \item Encuentre la derivada usando la definición para $f(x)=\sqrt{4x^2-6x+1}$.\\[100mm]
+      
+      \item Determinar la derivada $g'(x)$ en funci\'{o}n de $f'(x)$ si: $g(x)=f\left(\displaystyle \frac{\ln(\cos x)}{\log(\sen x)}\right)$\\[70mm]
+      \newpage
+      \item Derivar la siguiente funci\'{o}n: $f(x)=(x-3)^{\displaystyle \frac{1}{(x+1)}}$\\[100mm]
+      
+      \item Hallar $\displaystyle \frac{dy}{dx}$ si: $x^{y+2}=y^{x-3}$\\[70mm]
+
+\end{enumerate}
+
+\end{document}
