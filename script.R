@@ -98,3 +98,20 @@ for (i in seq(1:55)) {
 }
 
 
+# Primer Examen
+
+dir.create("./one_exam")
+setwd("./one_exam")
+list.files()
+
+for (i in seq(1:55)) {
+      knitr::knit('five_test.Rnw', output = paste('prueba_', i, '.tex', sep = ''))
+      system(paste('pdflatex ', 'prueba_', i, ".tex", sep=''))
+}
+
+# Quinta prueba
+
+dir.create("./extra_test")
+setwd("./extra_test")
+list.files()
+
