@@ -115,3 +115,10 @@ dir.create("./extra_test")
 setwd("./extra_test")
 list.files()
 
+
+# Sexto deber
+
+dir.create("./seven_task")
+setwd("./seven_task")
+list.files()
+
