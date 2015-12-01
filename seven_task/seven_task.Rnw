@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+\begin{document}
+
+\thispagestyle{empty}
+{\sf
+{\huge \scshape Escuela Polit\'{e}cnica Nacional} \\[5mm]
+{\Large \scshape Facultad de Ciencias}\hfill \rule{0.05\textwidth}{0.5pt} {\scshape Deber 07} \rule{0.05\textwidth}{0.5pt}\\[8mm]
+{\scshape Tema: Aplicaciones de la derivada}\\
+}
+
+\section{Movimiento rectilíneo}
+
+\begin{enumerate}
+      \item Sea $s(t)$ una función posición de una partícula que se mueve sobre la recta horizontal. Encuentre la posición, velocidad, rapidez y aceleración de la partícula en los instantes indicados.
+      \begin{enumerate}
+            \item $s(t)=(2t-6)^2$; $t=1$, $t=4$
+            \item $s(t)=\displaystyle \frac{t}{t+2}$; $t=0$, $t=1$
+            \item $s(t)=t\cos \pi t$; $t=\frac{1}{2}$, $t=2$
+      \end{enumerate}
+      
+      \item La altura (en pies) de un proyectil disparado verticalmente hacia arriba desde un punto a 6 pies por arriba del nivel del suelo la proporciona $s(t)=-16t^2+48t+6$, $0\leq t \leq T$, donde $T$ es el instante en que el proyectil choca contra el suelo.
+      
+      \begin{figure}[H]
+      \centering
+      \includegraphics[scale=.6]{images/fig02.png}
+      \end{figure}
+      
+      \begin{enumerate}
+            \item Determine el intervalo de tiempo en el cual $v>0$ y el intervalo de tiempo para el cual $v<0$.
+            \item Encuentre la altura máxima alcanzada por el proyectil.
+      \end{enumerate}
+      
+      \item Un participante en una carrera de automóviles de juguete desciende la colina. ?`Cuáles son la velocidad y aceleración del automóvil en la parte inferior de la colina?
+      
+      \begin{figure}[H]
+      \centering
+      \includegraphics[scale=.6]{images/fig03.png}
+      \end{figure}
+      
+      Ignore la fricción y considere que la distancia s (en pies) del cuerpo que se mueve hacia abajo sobre el plano inclinado de ángulo $\theta$ está dada por $s(t)=16t^2\sen \theta$.
+      
+\end{enumerate}
+
+\section{Razones de cambio relacionadas}
+
+\begin{enumerate}
+      \item Sean $x$ e $y$ dos funciones derivables de $t$, y relacionadas por la ecuación $y=x^2+3$. Calcular $\displaystyle\frac{dy}{dt}$ para $x=1$, sabiendo que $\displaystyle\frac{dx}{dt}=2$ para $x=1$.
+      
+      \item Se bombea aire en el interior de un globo esférico a razón de 4.5 pies cúbicos por minuto. Calcular la razón de cambio del radio del globo cuando el radio es de 2 pies.
+      
+      \item Una placa en forma de triángulo equilátero se expande con el tiempo. La longitud de un lado aumenta a razón constante de 2cm/h. ?`A qué razón crece el área cuando un lado mide 8 cm?
+      
+      \item En el problema 3, ?`a qué razón crece el área en el instante en que el área es $\sqrt{75}\quad \text{cm}^2$?
+      
+      \item En un lago en calma se deja caer una piedra, lo que provoca ondas circulares. El radio $r$ del círculo exterior está creciendo a una razón constante de 1 pie/s. Cuando el radio es 4 pies, ?`A qué razón está cambiando el área $A$ de la región circular perturbada?
+      
+      \item Dos aviones salen simultáneamente de un aeropuerto, el primero viaja hacia el Sur a una velocidad de 30 km/h y el segundo viaja hacia el Este a una velocidad de 50 km/h. Transcurridas  2 horas ?`Cuál es la velocidad de separación de los dos aviones?
+      
+      \item Un recipiente tiene la forma de un cono circular recto invertido y la longitud de su altura es el doble de la de su díametro. Al recipiente le está ingresando agua a una velocidad constante por lo que la profundidad del agua va en aumento. Cuando la profundidad es de 1 m la superficie sube a razón de 1 cm por minuto. ?`A qué velocidad está ingresando agua al recipiente?
+      
+      \item Un globo de aire caliente que asciende en línea recta desde el nivel del suelo es rastreado por un observador que está a 500 pies del punto de elevación. En el momento que el ángulo de elevación del observador es $\displaystyle\frac{\pi}{4}$, el ángulo crece a razón de 0.14 rad/min. ?`Qué tan rápido se está elevando el globo en ese momento?
+      
+      \item Una patrulla se aproxima a una intersección en ángulo recto desde el norte, persiguiendo a un automóvil que va a exceso de velocidad, y da vuelta en la esquina hacia el este. Cuando la patrulla se encuentra a 0.6 millas al norte de la intersección y el automóvil está a 0.8 millas al este, los policías determinan con un radar que la distancia entre ellos y el automóvil está aumentando a 20 millas/hora. Si la patrulla se mueve a 60 millas/hora en el instante de la medición, ?`cuál es la velocidad del automóvil?
+      
+      \item Una roca arrojada a un estanque tranquilo provoca una onda circular. Suponga que el radio de la onda se expande a razón constante de 2 pies/s.
+      \begin{enumerate}
+            \item ?`Cuán rápido crece el diámetro de la onda circular?
+            \item ?`Cuán rápido crece la circunferencia de la onda circular?
+            \item ?`Cuán rápido se expande el área de la onda circular cuando el radio es de 3 pies?
+            \item ?`Cuán rápido se expande el área de la onda circular cuando el área es $8\pi\quad \text{pies}^2$?
+      \end{enumerate}
+      
+      \item Una persona de 5 pies de estatura se aleja caminando de un poste de 20 pies de altura a razón constante de 3 pies/s.
+      
+      \begin{figure}[H]
+      \centering
+      \includegraphics[scale=.6]{images/fig01.png}
+      \end{figure}
+
+      \begin{enumerate}
+            \item ?`A qué razón crece la sombra de la persona ?
+            \item ?`A qué razón se aleja la punta de la sombra desde la base del poste?
+      \end{enumerate}
+      
+      \item Cada uno de los extremos verticales de un canal de agua de 20 pies de longitud es un triángulo equilátero con el vértice hacia abajo. Se bombea agua a razón constante de 4 $\text{pies}^3$/min.
+      \begin{enumerate}
+            \item ?`Cuán rápido sube el nivel $h$ del agua cuando la profundidad del agua es de 1 pie?.
+            \item ?`Si $h_0$ es la profundidad inicial del agua en el canal, demuestre que:
+            \[\frac{dh}{dt}=\frac{\sqrt{3}}{10}\left(h_0^2 + \frac{\sqrt{3}}{5}t\right)^{-1/2}\]
+            \emph{Sugerencia:} Considere la diferencia de volumen después de $t$ minutos.
+            \item Si $h_0=\frac{1}{2}$ pie y la altura del extremo triangular es de 5 pies, determine el instante en el que el canal está lleno. ?`Cuán rápido sube el nivel del agua cuando el canal está lleno?
+      \end{enumerate}
+      
+\end{enumerate}
+
+\end{document}
