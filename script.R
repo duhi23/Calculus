@@ -116,9 +116,15 @@ setwd("./extra_test")
 list.files()
 
 
-# Sexto deber
+# Septimo deber
 
 dir.create("./seven_task")
 setwd("./seven_task")
+list.files()
+
+# Septimo deber
+
+dir.create("./eight_task")
+setwd("./eight_task")
 list.files()
 
