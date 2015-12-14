@@ -109,7 +109,7 @@ for (i in seq(1:55)) {
       system(paste('pdflatex ', 'prueba_', i, ".tex", sep=''))
 }
 
-# Quinta prueba
+# Sexta prueba
 
 dir.create("./extra_test")
 setwd("./extra_test")
@@ -122,9 +122,15 @@ dir.create("./seven_task")
 setwd("./seven_task")
 list.files()
 
-# Septimo deber
+# Octavo deber
 
 dir.create("./eight_task")
 setwd("./eight_task")
 list.files()
 
+
+# Septima prueba
+
+dir.create("./seven_test")
+setwd("./seven_test")
+list.files()
