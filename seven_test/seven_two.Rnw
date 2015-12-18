@@ -73,7 +73,6 @@ one <- sample(seq(1, 9, by=1), size=2, replace=FALSE)
       \rput(2,3.3){\scriptsize Corte transversal}
       \end{pspicture}
       \end{figure}
-      
 \end{enumerate}
 
 \end{document}
