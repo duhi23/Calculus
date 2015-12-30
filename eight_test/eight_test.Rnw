@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+
+\begin{document}
+
+\thispagestyle{empty}
+{\sf
+{\Large \scshape Escuela Polit\'{e}cnica Nacional} \hfill {\scshape 5 de Enero 2016}\\[3mm] 
+{\scshape C\'{a}lculo en una variable \hfill Prueba $\#8$}\\[7mm]
+{\scshape Nombre:} \rule{0.6\textwidth}{0.5pt}\qquad {\scshape Nro. lista:} \rule{0.1\textwidth}{0.5pt}\\
+}
+
+<<ejercicio01, echo=FALSE, results='hide'>>=
+one <- sample(seq(1, 9, by=1), size=2, replace=FALSE)
+@
+
+
+\begin{enumerate}
+      \item Evalúe la integral indefinida dada.
+      \begin{enumerate}
+            \item {\scshape (1 Pto.)} $\displaystyle \int \frac{t^3-8t-1}{(2t)^4}\ dt$
+      \end{enumerate}
+      \item Evalúe la integral indefinida dada usando una sustitución idónea.
+      \begin{enumerate}
+            \item {\scshape (1.5 Ptos.)} $\displaystyle \int \frac{1}{x(\ln x)^2}\ dx$
+            %\item {\scshape (1 Pto.)} $\displaystyle \int \cos^2 4x\ dx$
+      \end{enumerate}
+      \item {\scshape (3 Ptos.)} Aproxime el área A bajo la gráfica de $f(x)=x^3-2x^2+3$ por medio de la suma de áreas de rectángulos sobre el intervalo $[2,4]$.
+      
+      \item Use el teorema fundamental del cálculo para evaluar la integral definida dada
+      \begin{enumerate}
+            %\item {\scshape (1 Pto.)} $\displaystyle \int_{-1/2}^{3/2} (x-\cos \pi x)\ dx$
+            \item {\scshape (1.5 Ptos.)} $\displaystyle \int_{-1}^{1} \frac{u^3+u}{(u^4+2u^2+1)^5}\ du$
+      \end{enumerate}
+      
+      \item Use integración por partes para evaluar la integral dada
+      \begin{enumerate}
+            \item {\scshape (1 Pto.)} $\displaystyle \int \ln x^5\ dx$
+            \item {\scshape (2 Ptos.)} $\displaystyle \int \sen^4 x\ dx$
+      \end{enumerate}
+      
+      \item Evalúe la integral indefinida dada por medio de una sustitución trigonométrica
+      \begin{enumerate}
+            \item {\scshape (2 Ptos.)} $\displaystyle \int \frac{x-3}{(5-4x-x^2)^{3/2}}\ dx$
+            %\item 
+      \end{enumerate}
+\end{enumerate}
+
+\end{document}
