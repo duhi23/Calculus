@@ -36,31 +36,31 @@ one <- sample(seq(1, 9, by=1), size=2, replace=FALSE)
 \begin{enumerate}
       \item Evalúe la integral indefinida dada.
       \begin{enumerate}
-            \item {\scshape (1 Pto.)} $\displaystyle \int \frac{t^3-8t-1}{(2t)^4}\ dt$\\[35mm]
+            \item {\scshape (1 Pto.)} $\displaystyle \int \frac{t^3-9t-6}{(3t)^4}\ dt$\\[35mm]
       \end{enumerate}
       \item Evalúe la integral indefinida dada usando una sustitución idónea.
       \begin{enumerate}
-            \item {\scshape (1.5 Ptos.)} $\displaystyle \int \frac{1}{x(\ln x)^2}\ dx$\\[35mm]
+            \item {\scshape (1.5 Ptos.)} $\displaystyle \int \frac{1}{x(\ln x)^3}\ dx$\\[35mm]
             %\item {\scshape (1 Pto.)} $\displaystyle \int \cos^2 4x\ dx$
       \end{enumerate}
-      \item {\scshape (3 Ptos.)} Aproxime el área A bajo la gráfica de $f(x)=x^3-2x^2+3$ por medio de la suma de áreas de rectángulos sobre el intervalo $[2,4]$.
+      \item {\scshape (3 Ptos.)} Aproxime el área A bajo la gráfica de $f(x)=x^3-x^2+2$ por medio de la suma de áreas de rectángulos sobre el intervalo $[1,3]$.
       
       \newpage
       \item Use el teorema fundamental del cálculo para evaluar la integral definida dada
       \begin{enumerate}
             %\item {\scshape (1 Pto.)} $\displaystyle \int_{-1/2}^{3/2} (x-\cos \pi x)\ dx$
-            \item {\scshape (1.5 Ptos.)} $\displaystyle \int_{-1}^{1} \frac{u^3+u}{(u^4+2u^2+1)^5}\ du$\\[35mm]
+            \item {\scshape (1.5 Ptos.)} $\displaystyle \int_{-2}^{2} \frac{u^3+u}{(u^4+2u^2-7)^5}\ du$\\[35mm]
       \end{enumerate}
       
       \item Use integración por partes para evaluar la integral dada
       \begin{enumerate}
-            \item {\scshape (1 Pto.)} $\displaystyle \int \ln x^5\ dx$\\[38mm]
-            \item {\scshape (2 Ptos.)} $\displaystyle \int \sen^4 x\ dx$\\[38mm]
+            \item {\scshape (1 Pto.)} $\displaystyle \int \ln x^6\ dx$\\[38mm]
+            \item {\scshape (2 Ptos.)} $\displaystyle \int \cos^4 x\ dx$\\[38mm]
       \end{enumerate}
       
       \item Evalúe la integral indefinida dada por medio de una sustitución trigonométrica
       \begin{enumerate}
-            \item {\scshape (2 Ptos.)} $\displaystyle \int \frac{x-3}{(5-4x-x^2)^{3/2}}\ dx$
+            \item {\scshape (2 Ptos.)} $\displaystyle \int \frac{x-1}{(12-4x-x^2)^{3/2}}\ dx$
             %\item 
       \end{enumerate}
 \end{enumerate}
