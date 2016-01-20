@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+
+\begin{document}
+
+\thispagestyle{empty}
+{\sf
+{\Large \scshape Escuela Polit\'{e}cnica Nacional} \hfill {\scshape 19 de Enero 2016}\\[3mm] 
+{\scshape C\'{a}lculo en una variable \hfill Prueba $\#9$}\\[7mm]
+{\scshape Nombre:} \rule{0.6\textwidth}{0.5pt}\qquad {\scshape Nro. lista:} \rule{0.1\textwidth}{0.5pt}\\
+}
+
+<<ejercicio01, echo=FALSE, results='hide'>>=
+one <- sample(seq(1, 9, by=1), size=2, replace=FALSE)
+@
+
+
+\begin{enumerate}
+      \item Evalúe la integral indefinida dada.
+      \begin{enumerate}
+            \item {\scshape (1 Pto.)} $\displaystyle \int (x-x^{-3})\sqrt{x\sqrt{x\sqrt{x}}}\ dx$\\[35mm]
+            
+            \item {\scshape (1 Pto.)} $\displaystyle \int (x^2+2x+5)e^{-x}\ dx$\\[35mm]
+      \end{enumerate}
+      \item Evalúe la integral indefinida dada usando una sustitución idónea.
+      \begin{enumerate}
+            \item {\scshape (1.5 Ptos.)} $\displaystyle \int \frac{1}{x(\ln x)^3}\ dx$\\[35mm]
+            %\item {\scshape (1 Pto.)} $\displaystyle \int \cos^2 4x\ dx$
+      \end{enumerate}
+      \item {\scshape (3 Ptos.)} Aproxime el área A bajo la gráfica de $f(x)=x^3-x^2+2$ por medio de la suma de áreas de rectángulos sobre el intervalo $[1,3]$.
+      
+      \newpage
+      \item Use el teorema fundamental del cálculo para evaluar la integral definida dada
+      \begin{enumerate}
+            %\item {\scshape (1 Pto.)} $\displaystyle \int_{-1/2}^{3/2} (x-\cos \pi x)\ dx$
+            \item {\scshape (1.5 Ptos.)} $\displaystyle \int_{-2}^{2} \frac{u^3+u}{(u^4+2u^2-7)^5}\ du$\\[35mm]
+      \end{enumerate}
+      
+      \item Use integración por partes para evaluar la integral dada
+      \begin{enumerate}
+            \item {\scshape (1 Pto.)} $\displaystyle \int \ln x^6\ dx$\\[38mm]
+            \item {\scshape (2 Ptos.)} $\displaystyle \int \cos^4 x\ dx$\\[38mm]
+      \end{enumerate}
+      
+      \item Evalúe la integral indefinida dada por medio de una sustitución trigonométrica
+      \begin{enumerate}
+            \item {\scshape (2 Ptos.)} $\displaystyle \int \frac{x-1}{(12-4x-x^2)^{3/2}}\ dx$
+            %\item 
+      \end{enumerate}
+\end{enumerate}
+
+\end{document}
