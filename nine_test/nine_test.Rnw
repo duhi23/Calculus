@@ -38,7 +38,7 @@ one <- sample(seq(1, 9, by=1), size=2, replace=FALSE)
       \begin{enumerate}
             \item {\scshape (1.5 Ptos.)} $\displaystyle \int\limits_{1}^{2} (x-x^{-3})\sqrt{x\sqrt[3]{x}}\ dx$\\[45mm]
             
-            \item {\scshape (1.5 Ptos.)} $\displaystyle \int\limits_{-\infty}^{-2} \frac{x^2}{(x^3+1)^2}\ dx$\\[45mm]
+            \item {\scshape (1.5 Ptos.)} $\displaystyle \int\limits_{-\infty}^{+\infty} e^{-|x|}\ dx$\\[45mm]
       \end{enumerate}
       
       \item Evalúe las integrales indefinidas dadas.
