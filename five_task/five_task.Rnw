@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+\newenvironment{question}{\item}{}
+\newenvironment{solution}{\comment}{\endcomment}
+\newenvironment{answerlist}{\renewcommand{\labelenumi}{(\alph{enumi})}\begin{enumerate}}{\end{enumerate}}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+{\sf
+{\huge \scshape Escuela Polit\'{e}cnica Nacional} \\[5mm]
+{\Large \scshape Facultad de Ciencias}\hfill \rule{0.05\textwidth}{0.5pt} {\scshape Deber 05} \rule{0.05\textwidth}{0.5pt}\\[8mm]
+{\scshape Tema: Regla de la cadena}\\
+}
+
+Encuentre la derivada de la función dada:
+\begin{multicols}{2}
+\begin{enumerate}
+      \item $\displaystyle f(x)=(3x^2+1)^{10}$\\[2mm]
+      \item $\displaystyle f(x)=(1-4x^3)^{-2/5}$\\[2mm]
+      \item $\displaystyle f(x)=\left(x^2-\frac{3}{x^2}\right)^4$\\[2mm]
+      \item $\displaystyle f(x)=(5x-2)^3(-2x+7)^4$\\[2mm]
+      \item $\displaystyle f(x)=\frac{4x-3}{(5x-9)^3}$\\[2mm]
+      \item $\displaystyle f(x)=\left(\frac{x^{-2}-x^{-3}}{4x^{-1}}\right)^{-3}$\\[2mm]
+      \item $\displaystyle f(x)=(x+1)^4(x+2)^3(x+3)^2$\\[2mm]
+      \item $\displaystyle f(x)=\left(x+(x^2-9)^3\right)^{10}$\\[2mm]
+      \item $\displaystyle f(x)=\frac{\sqrt{2x^3-5x}}{\sqrt{1-2x^2}}$\\[2mm]
+      \item $\displaystyle f(x)=\sqrt[3]{2x-\sqrt[3]{x}}$\\[2mm]
+      \item $\displaystyle f(x)=\log_2\left(\frac{2x-3}{4-5x}\right)$\\[2mm]
+      \item $\displaystyle f(x)=\ln\left(\sqrt{2x}-\frac{1}{x}\right)^2$\\[2mm]
+\end{enumerate}
+\end{multicols}
+
+Encuentre la derivada de las siguientes funciones trigonométricas:
+\begin{multicols}{2}
+\begin{enumerate}
+      \item $\displaystyle f(x)=\sen^3(2x-4)$\\[2mm]
+      \item $\displaystyle f(x)=\tan\left(\displaystyle\frac{1}{x^2}\right)$\\[2mm]
+      \item $\displaystyle f(x)=(x^2-3)^4\tan^2(5x)$\\[2mm]
+      \item $\displaystyle f(x)=\frac{\left(1+\cos(4x)\right)^2}{\left(1-\sen(3x)\right)^2}$\\[2mm]
+      \item $\displaystyle f(x)=\sqrt{\sen(3x)-4x}$\\[2mm]
+      \item $\displaystyle f(x)=\frac{\sen(6x)}{\cos(3x)}$\\[2mm]
+      \item $\displaystyle f(x)=\left(\cos(2x)-\sen(2x)\right)^2$\\[2mm]
+      \item $\displaystyle f(x)=\cos\left(\cos(x^2-3x)\right)$\\[2mm]
+      \item $\displaystyle f(x)=\sen^3\left(\sqrt[4]{2x-3}\right)$\\[2mm]
+      \item $\displaystyle f(x)=\left(\cos(x^3-x^2)-\sen\left(\frac{1}{x^4}\right)\right)^3$\\[2mm]
+\end{enumerate}
+\end{multicols}
+
+\end{document}
