@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pst-eucl,pstricks,pstricks-add}
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{url}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{lmodern}
+\parindent=0mm
+
+
+\begin{document}
+
+\thispagestyle{empty}
+{\sf
+{\Large \scshape Escuela Polit\'{e}cnica Nacional} \hfill {\scshape 24 de Febrero 2016}\\[3mm] 
+{\scshape C\'{a}lculo en una variable \hfill Examen Supletorio}\\[7mm]
+{\scshape Nombre:} \rule{0.6\textwidth}{0.5pt}\qquad {\scshape Nro. lista:} \rule{0.1\textwidth}{0.5pt}\\
+}
+
+<<ejercicio01, echo=FALSE, results='hide'>>=
+one <- sample(seq(1, 9, by=1), size=2, replace=FALSE)
+@
+
+
+\begin{enumerate}
+      \item Usando la definición de límite muestre que: $\displaystyle \lim_{x \to -5} \frac{3x^2+22x+40}{2x^2+13x+21}=\frac{5}{6}$
+      
+      \item Calcule el siguiente límite: $\displaystyle \lim_{x\to +\infty} \sqrt{5x-4\sqrt{x}+1}-\sqrt{5x+3\sqrt{x}-2} $
+      
+      \item Encuentre la derivada de la función: $\displaystyle f(x)=\sqrt{4x}\ (x^{-3}+1)^5 e^{x^2}$
+      
+      \item Halle $f'(x)$ empleando el teorema de la función inversa de: $f(x)=\arcsin \displaystyle\frac{x}{2}$
+      
+      \item Encuentre $\displaystyle \frac{dy}{dx}$ si $xy^2 +\sen(y) \ln xy + x^3y^2=\displaystyle \frac{x}{y}$
+      
+      \item Hallar la base B y la altura H de una cartulina en forma rectangular de 60 cm de perímetro, que, al dar la vuelta completa alrededor de un lado vertical, genera un cilindro de volumen máximo.
+      
+      \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.45]{derivada.png}
+      \end{figure}
+      
+      \item Encuentre $\displaystyle \int_{-1}^{4} f(x) dx$, conocido que $\displaystyle \int_{-1}^{4} \left[2f(x)-7\right]\ dx=-31$.
+      
+      \item Calcule las siguientes integrales: 
+      \begin{enumerate}
+            \item $\displaystyle \int \frac{\ln \left(\ln x\right)}{x}\ dx$
+            \item $\displaystyle \int \frac{x}{(x+1)(x^2+1)^2}\ dx$
+            \item $\displaystyle \int \frac{x^2}{\sqrt{x^2+4x-12}}\ dx$
+      \end{enumerate}
+      
+      \item Evalúe la siguiente integral impropia: $\displaystyle \int_{-\infty}^{+\infty} \frac{dx}{e^x+e^{-x}}$
+      
+      \item Calcule el volumen del sólido que genera la región limitada por las curvas: $y=2(x-2)^2$; $y=2x$, cuando rota alrededor del eje $x=-1$.
+
+\end{enumerate}
+
+\end{document}
